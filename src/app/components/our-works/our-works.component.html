@@ -1,0 +1,36 @@
+<div class="container-fluid p-lg-5">
+    <h1 class="text-center mb-4 works ">{{"works" | translate}}</h1>
+    <div class="">
+        <div class="row" dir="{{direction}}">
+            <div class="card m-5 p-2" style="width: 18rem;" *ngFor="let project of projects">
+                <div class="col-12" >
+                    <img [src]="project.Image[0].url" class="card-img-top w-100" style="max-height: 300px;" >
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title title">{{project.titile}}</h5>
+                    <p class="card-text">{{project.subTitle}}</p>
+                    <p>{{project.category.name}}</p>
+                    <button  class="btn btn-warning border border-dark btn-lg " [routerLink]="['/project',project._id]">{{"details" |translate}}</button>
+                </div>
+                
+            </div>
+            <!-- <div class="col-md-6 col-lg-4 shadow" *ngFor="let project of projects">
+                <div class="card border-none">
+                    <div class="card-body">
+                        <h5 class="card-title">{{project.titile}}</h5>
+                        <p class="card-text">{{project.subTitle}}.</p>
+                        <p>{{project.category.name}}</p>
+                        <div *ngFor="let img of project.Image">
+                        <div class="col-4">
+                            <img [src]="project.Image[0].url" class="w-100">
+                             </div> 
+                        </div>
+                       
+                    </div>
+
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+</div>

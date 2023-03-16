@@ -1,0 +1,21 @@
+.slideimg{
+    max-height: 660px;
+}
+.description{
+    text-decoration: underline;
+}
+.carousel-control-prev-icon{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_HTeARhcT3C_TlGbEp3UQihXPBv9rVGLjw&usqp=CAU')
+}
+.carousel-control-next-icon{
+ background-image: url('https://apufpel.com.br/assets/img/seta_ult.png')
+}
+::ng-deep .carousel-control-prev-icon {
+
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F1152460%2Fmore_next_prev_previous_right_skip_step_icon&psig=AOvVaw2p9Ta3TY-QqCIuwawOuvy5&ust=1678933698071000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOChxsfx3P0CFQAAAAAdAAAAABAE");
+  }
+  .titlt{
+    text-decoration: underline;
+    text-decoration-color: #FAC90A;
+
+  }

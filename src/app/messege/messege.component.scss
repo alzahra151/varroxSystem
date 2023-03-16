@@ -1,0 +1,32 @@
+.messege{
+    position: fixed;
+    right: 3%;
+    top:83%;
+    width: 80px;
+    height: 80px;
+}
+.messagIcon{
+    position: absolute;
+    right: 30%;
+    top: 30%;
+}
+// .modal {
+//     position: absolute;
+//     top:20px;
+//     right: 200px;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 10040;
+//     overflow: auto;
+//     overflow-y: auto;
+//  }
+ .modal-dialog {
+    position: absolute;
+    right: -60%;
+    top:15%;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+  }

@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row" dir="{{direction}}">
+        
+            <div class="col-lg-6" >
+                <!-- <carousel [noPause]="false" >
+                    <slide *ngFor="let img of project.Image">
+                        <div class="" >
+                        <img [src]="img.url" alt="First slide" style="display: block; width: 100%;height: 660px;" class="slideimg">
+                        <div class="carousel-caption d-none d-md-block">       
+                        </div>
+                        </div>
+                    </slide>
+
+                </carousel> -->
+                <ngb-carousel *ngIf="images">
+
+                    <ng-template ngbSlide *ngFor="let img of project.Image" >
+                      <div class="wrapper p-2">
+                        <img [src]="img.url" alt="Random first slide" class="slideimg w-100" style="height: 660px;">
+                      </div>
+                      <!-- <div class="carousel-caption">
+                        <h3>First Slide</h3>
+                        <p> Angular 13 Carousel Example </p>
+                      </div> -->
+                    </ng-template>
+                   
+                   
+                  </ngb-carousel>
+                
+            </div>
+       
+        <div class="col-lg-6 p-5 " >
+            <h2 class="titlt m-2">{{project.titile}}</h2>
+            <h5 class="description p-1">"{{"Project Description" |translate}}":</h5>
+            <p class="fs-4">{{project.subTitle}}</p>
+              <p class="mb-5">{{project.description}}</p>
+             <div class="mt-5">
+                <button class="btn btn-warning p-1" (click)="goToback()">{{"Back" |translate}}</button>
+             </div>
+        </div>
+       
+    </div>
+</div>

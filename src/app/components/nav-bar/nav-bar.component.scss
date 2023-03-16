@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.customNav{
+    background-color: white !important;
+    // border-bottom: 1px solid  black;
+   
+}
+.logo{
+    color: #FAC90A;
+
+}
+.contact{
+    background-color: black;
+    margin-right: 15px;
+    justify-content: end;
+    color:#FAC90A;
+}
+.changLang{
+    padding-right: 0px;
+}
+#menu{
+    color:  black !important;
+   
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FAC90A;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    margin-top: -2;
+}
+.serviecOption{
+    border:0px;
+    outline:0px;
+   
+}
+.logo{
+    width:50px;
+    height:50px
+}

@@ -1,0 +1,41 @@
+<div class="rounded-circle bg-dark messege" >
+    <i class="messagIcon text-warning fs-2 bi bi-chat-right-text-fill " data-toggle="modal" data-target="#exampleModal"></i>
+</div>
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog rounded" role="document" style="width: 400px; height: 700px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{"New message" | translate}} </h5>
+          <button type="button" class="close btn btn-danger rounded" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">{{"clientName" | translate}}:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">{{"clientEmail" | translate}}:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">{{"clientPhone" | translate}}:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">{{"Message" |translate}}:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning">"{{"Send message" | translate}}"</button>
+        </div>
+      </div>
+    </div>
+  </div>

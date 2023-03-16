@@ -1,0 +1,47 @@
+{
+    "home": "Home",
+    "projects": "Projects",
+    "aboutUs":"About Us",
+    "languag":"Languag",
+    "en":"English",
+    "ar":"Arabic",
+    "logo":{
+        "name":"Varrox",
+        "text":"BUSINUSS SOLUTIONS"
+    },
+    "vision":"To be the first choice for everyone looking for effective solutions to their work environment by innovating and providing modern and advanced business management techniques",
+     "visionBtn":"Our Vision",
+     "Our services":"Our services",
+     "service1":{
+        "name":"Desktop Applications",
+        "description":"Programming and designing the best administrative systems for all commercial projects with comprehensive control and achieving synchronization in the application to connect all branches of your business"
+    },
+    "service2":{
+        "name":"Mobile Applications",
+        "description":"Programming and designing mobile applications (Android and iOS). We focus on converting your project and ideas into high-quality and sustainable applications"
+    },
+    "service3":{
+        "name":"Web Sites",
+        "description":"Programming and designing websites to suit your needs, whether it is an introductory interface, an online store, human resource management..."
+    },
+    "whyVarrox":{
+        "whyVarrox":"Why Varrox",
+        "1": "Because we are working to find the best software solutions for all your business.",
+        "2": "We entrusted the most efficient programmers with this.",
+        "3": "The support team is in constant contact with you."
+    },
+    "works":"Our Works",
+    "details":"Details",
+    "contactUs":"Contact Us",
+    "Menu":"Menu",
+    "clientName":"Your Name",
+    "clientEmail":"Your Email",
+    "clientPhone":"Your Mobile",
+    "Send message":"Send Message",
+    "Message":"Message",
+    "Project Description":"Project Description",
+    "Back":"Back"
+    
+
+    
+  }

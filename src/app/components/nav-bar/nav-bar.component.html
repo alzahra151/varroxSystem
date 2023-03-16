@@ -1,0 +1,114 @@
+<nav
+  class="navbar sticky-top justify-content-between customNav navbar-expand-lg navbar-light shadow-sm d-flex pt-0 mt-0"
+  dir="{{direction}}">
+  <a href="#" class="navbar-brand ">
+    <div class="logo">
+      <img class="w-100 me-0 " src="assets/logo.jpg">
+      <span class="fs-5 text-dark fw-bold">{{'logo.name' | translate}}</span>
+      <h6 class="ms-1 logo">{{'logo.text' |translate}}</h6>
+    </div>
+
+  </a>
+
+  <div class="d-lg-block d-none justify-content-center" id="navbarSupportedContent">
+    <div class=" ">
+      <ul class=" navbar-nav mx-auto fs-5  m-3">
+        <li class="nav-item active ">
+          <a class="nav-link" [routerLink]="['/']">{{"home" | translate}} </a>
+        </li>
+        <li class="nav-item option">
+          <div class="nav-item dropdown me-5">
+            <a class="nav-link dropdown-toggle me-2" data-bs-toggle="dropdown">{{"projects" | translate }} </a>
+            <div class="dropdown-menu ">
+              <button [routerLink]="['/projects']" *ngFor="let service of services"
+                (click)="getserviceProjects(service._id)" class="dropdown-item">{{service.name}}</button>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{"aboutUs" | translate}}</a>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="nav-item dropdown me-5">
+            <a href="#" class="nav-link dropdown-toggle me-2" data-bs-toggle="dropdown">{{"languag" | translate }} <i
+                class="bi bi-globe-central-south-asia"></i></a>
+            <div class="dropdown-menu ">
+              <button (click)="swichLang('en')" class="dropdown-item">{{"en" | translate}}<img
+                  src="assets/icons8-united-states-48.png"></button>
+              <button (click)="swichLang('ar')" class="dropdown-item">{{"ar" | translate}}<img
+                  src="assets/icons8-egypt-48.png"></button>
+
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+  <div class="d-flex ">
+    <button class=" contact btn  btn-sm btn-lg-lg  me-3 ms-3 fs-5 fw-bold  text-warrning">{{"contactUs" |
+      translate}}</button>
+    <button class="btn btn-dark d-lg-none d-block " type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+        class="bi bi-list text-light"></i>{{"Menu" | translate}}</button>
+
+  </div>
+
+</nav>
+
+<!-- offconvas nav -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+  id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav class="navbar justify-content-between customNav navbar-expand-lg navbar-light shadow-sm d-flex"
+      dir="{{this.languagservice.direction}}">
+      <div class=" justify-content-center" id="navbarSupportedContent">
+        <div class=" ">
+          <ul class=" navbar-nav mx-auto fw-bold m-3">
+            <li class="nav-item active ">
+              <a class="nav-link" href="#">{{"home" | translate}} <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item dropdown me-5">
+                <a class="nav-link dropdown-toggle me-2" data-bs-toggle="dropdown">{{"projects" | translate }} </a>
+                <div class="dropdown-menu ">
+                  <button [routerLink]="['/projects']" *ngFor="let service of services"
+                    (click)="getserviceProjects(service._id)" class="dropdown-item">{{service.name}}</button>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">{{"aboutUs" | translate}}</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-item dropdown me-5">
+                <a href="#" class="nav-link dropdown-toggle me-2" data-bs-toggle="dropdown">{{"languag" | translate }}
+                  <i class="bi bi-globe-central-south-asia"></i></a>
+                <div class="dropdown-menu ">
+                  <button (click)="swichLang('en')" class="dropdown-item">{{"en" | translate}}<img
+                      src="assets/icons8-united-states-48.png"></button>
+                  <button (click)="swichLang('ar')" class="dropdown-item">{{"ar" | translate}}<img
+                      src="assets/icons8-egypt-48.png"></button>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+
+      </div>
+    </nav>
+  </div>
+</div>
