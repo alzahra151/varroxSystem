@@ -21,14 +21,9 @@
     "@ng-bootstrap/ng-bootstrap": "^14.0.1",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
-<<<<<<< HEAD
-    "ngx-bootstrap": "^10.2.0",
-     "rxjs": "~7.5.0",
-=======
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "rxjs": "~7.5.0",
->>>>>>> da731ac (chang slider)
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
